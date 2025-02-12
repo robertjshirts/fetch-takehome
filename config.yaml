@@ -1,5 +1,5 @@
 package: gen
 generate:
   gin-server: true
+  embedded-spec: true
   models: true
-  
