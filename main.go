@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+
 	swagger, err := gen.GetSwagger()
 	if err != nil {
 		log.Fatalf("failed to get swagger: %v", err)
@@ -30,5 +31,6 @@ func main() {
 		Addr:    ":8080",
 	}
 
+	log.Println("Serving on port 8080")
 	log.Fatal(s.ListenAndServe())
 }
